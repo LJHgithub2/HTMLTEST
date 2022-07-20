@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 <html lang="kr">
 	<head>
-		<title>로그인</title>
+		<title>본인인증</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link type="text/css" rel="stylesheet" href="assets/css/login/login.css" />
+        <link rel="stylesheet" href="assets/css/login/login.css" />
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 			<!-- Header -->
 				<header id="header">
-					<h1><a href="index.html">애도</a> 로그인</h1>
+					<h1><a href="index.html">애도</a> 본인인증</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">홈</a></li>
@@ -30,24 +30,21 @@
 				
 				<section id="main" class="container medium">
 				<header>
-					<h3>로그인</h3>
-					<p>안녕하세요.애도입니다.<br>본인 인증을 위해 휴대전화 번호를 입력해주세요.</p>
+					<h3>본인인증</h3>
+					<p>전송된 인증번호 4자리를 입력해 주세요.</p>
 				</header>
 				<div class="box">
 					<form method="post" action="#">
 						<div class="row gtr-50 gtr-uniform">
 							<div class="col-8 col-12-mobilep">
-								<td class="one_td" colspan="3">
-								<input type="text" name="phone" id="phone" placeholder="전화번호( '-' 없이)" />
-							</td>
+								<input type="text" name="phone" id="phone" placeholder="4자리 인증번호를 입력해 주세요" />
 							</div>
 
 							<div class="col-4 col-12-mobilep">
-								<td class="one_td" colspan="3">
 								<input type="submit" id="submit" value="확인" class="fit" />
-								</td>
 							</div>
 						</div>
+						
 					</form>
 				</div>
 				</section>
@@ -62,9 +59,10 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-			<script type="text/javascript" src="assets/js/login/login.js" > </script>
+			<script type="text/javascript" src="assets/js/login/logincheck.js" > </script>
 			<script type="text/javascript" src="assets/js/login/jquery-1.10.1.min.js"> </script>
 			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 	</body>
 </html>

@@ -20,7 +20,7 @@ function validation(){
 }
 function submit(){
 	var phone_num=escape($("#phone").val());
-	location.href="login2.html?phone_num="+phone_num;
+	location.href="logincheck.html?phone_num="+phone_num;
 }
 $(document.body).delegate("#submit","click",function(){
 	validation();
