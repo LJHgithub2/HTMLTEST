@@ -3901,18 +3901,22 @@
 		padding: 10px 50px;
 	  }
 	  
-	  .navbar__logo > img {
+	.navbar__logo > img {
 		height: 50px;
 		width: 50px;
 	  }
 	  
-	  .navbar__logo > span {
+	.navbar__logo > span {
 		font-size: var(--font-regular);
 		font-weight: bold;
 		margin-left: 10px;
 		color: white;
 	  }
 
-	  .one_td{
+	.one_td{
 		width:100%;
+	}
+
+	.reflesh{
+		cursor:pointer;
 	}

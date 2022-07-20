@@ -37,12 +37,24 @@
 					<form method="post" action="#">
 						<div class="row gtr-50 gtr-uniform">
 							<div class="col-8 col-12-mobilep">
-								<input type="text" name="phone" id="phone" placeholder="4자리 인증번호를 입력해 주세요" />
+								<div class="phone_box">
+								<input type="text" name="phone" class="auth_number" id="auth_number" placeholder="4자리 인증번호를 입력해 주세요" />
+								</div>
 							</div>
 
 							<div class="col-4 col-12-mobilep">
-								<input type="submit" id="submit" value="확인" class="fit" />
+								<div class="submit" onclick="submit();">
+									<input type="submit" id="submit" value="확인" class="fit" />
+								</div>
 							</div>
+
+							<tr height="15%">
+								<td class="one_td title_td" colspan="3">
+									<a href="./login.html">휴대전화 번호 재입력</a> | <a class="reflesh" onclick="code_receive();">인증코드 재전송</a>
+									<div><span id="time">남은시간 3:00</span></div>
+								</td>
+							</tr>
+							
 						</div>
 						
 					</form>
