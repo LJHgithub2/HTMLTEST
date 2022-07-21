@@ -2880,6 +2880,154 @@
 			opacity: 0.25;
 		}
 
+		/* */
+
+		input[type="login_button"],
+		input[type="reset"],
+		input[type="button"],
+		.button {
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			-ms-appearance: none;
+			appearance: none;
+			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+			background-color: #F3B368;
+			border-radius: 6px;
+			border: 0;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-weight: 400;
+			height: 3em;
+			line-height: 3em;
+			padding: 0 2em;
+			text-align: center;
+			text-decoration: none;
+			white-space: nowrap;
+		}
+		
+			input[type="login_button"]:hover,
+			input[type="reset"]:hover,
+			input[type="button"]:hover,
+			.button:hover {
+				background-color: #737373;
+			}
+	
+			input[type="login_button"]:active,
+			input[type="reset"]:active,
+			input[type="button"]:active,
+			.button:active {
+				background-color: #595959;
+			}
+	
+			input[type="login_button"].icon,
+			input[type="reset"].icon,
+			input[type="button"].icon,
+			.button.icon {
+				padding-left: 1.35em;
+			}
+	
+				input[type="login_button"].icon:before,
+				input[type="reset"].icon:before,
+				input[type="button"].icon:before,
+				.button.icon:before {
+					margin-right: 0.5em;
+				}
+	
+			input[type="login_button"].fit,
+			input[type="reset"].fit,
+			input[type="button"].fit,
+			.button.fit {
+				width: 100%;
+			}
+	
+			input[type="login_button"].small,
+			input[type="reset"].small,
+			input[type="button"].small,
+			.button.small {
+				font-size: 0.8em;
+				height: 2.7em;
+				line-height: 2.7em;
+			}
+	
+			input[type="login_button"].large,
+			input[type="reset"].large,
+			input[type="button"].large,
+			.button.large {
+				font-size: 1.25em;
+				height: 2.7em;
+				line-height: 2.7em;
+			}
+	
+			input[type="login_button"].alt,
+			input[type="reset"].alt,
+			input[type="button"].alt,
+			.button.alt {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px #e5e5e5;
+				color: #777;
+			}
+	
+				input[type="login_button"].alt:hover,
+				input[type="reset"].alt:hover,
+				input[type="button"].alt:hover,
+				.button.alt:hover {
+					background-color: #f8f8f8;
+				}
+	
+				input[type="login_button"].alt:active,
+				input[type="reset"].alt:active,
+				input[type="button"].alt:active,
+				.button.alt:active {
+					background-color: #f0f0f0;
+				}
+	
+				input[type="login_button"].alt.icon:before,
+				input[type="reset"].alt.icon:before,
+				input[type="button"].alt.icon:before,
+				.button.alt.icon:before {
+					color: #999;
+				}
+	
+			input[type="login_button"].primary,
+			input[type="reset"].primary,
+			input[type="button"].primary,
+			.button.primary {
+				background-color: #e89980;
+				color: #ffffff !important;
+			}
+	
+				input[type="login_button"].primary:hover,
+				input[type="reset"].primary:hover,
+				input[type="button"].primary:hover,
+				.button.primary:hover {
+					background-color: #ecaa96;
+				}
+	
+				input[type="login_button"].primary:active,
+				input[type="reset"].primary:active,
+				input[type="button"].primary:active,
+				.button.primary:active {
+					background-color: #e4886a;
+				}
+	
+			input[type="login_button"].disabled, input[type="login_button"]:disabled,
+			input[type="reset"].disabled,
+			input[type="reset"]:disabled,
+			input[type="button"].disabled,
+			input[type="button"]:disabled,
+			.button.disabled,
+			.button:disabled {
+				background-color: #777 !important;
+				box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
+				color: #f5f5f5 !important;
+				cursor: default;
+				opacity: 0.25;
+			}
+
 /* Header */
 
 	#page-wrapper {
@@ -3069,6 +3217,16 @@
 			position: absolute;
 		}
 
+		#header.alts {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background: #F3B368;
+			color: rgba(255, 255, 255, 0.75);
+			position: absolute;
+		}
+
 			#header.alt nav > ul > li a:not(.button).icon:before {
 				color: rgba(255, 255, 255, 0.75);
 			}
@@ -3097,6 +3255,36 @@
 				#header.alt .button:active {
 					background-color: rgba(255, 255, 255, 0.2);
 				}
+				
+				/*  */
+				#header.alts nav > ul > li a:not(.button).icon:before {
+					color: rgba(255, 255, 255, 0.75);
+				}
+	
+				#header.alts nav > ul > li.active a:not(.button) {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+	
+				#header.alts input[type="submit"],
+				#header.alts input[type="reset"],
+				#header.alts input[type="button"],
+				#header.alts .button {
+					box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+				}
+	
+					#header.alts input[type="submit"]:hover,
+					#header.alts input[type="reset"]:hover,
+					#header.alts input[type="button"]:hover,
+					#header.alts .button:hover {
+						background-color: rgba(255, 255, 255, 0.1);
+					}
+	
+					#header.alts input[type="submit"]:active,
+					#header.alts input[type="reset"]:active,
+					#header.alts input[type="button"]:active,
+					#header.alts .button:active {
+						background-color: rgba(255, 255, 255, 0.2);
+					}
 
 	.dropotron {
 		background: #fff;
@@ -3162,8 +3350,8 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background-color: #666;
-		background-image: url("../../images/top_banner.png"), url("../../images/top_banner.png");
+		background-color: #ffff;
+		background-image: url("../../images/top_banner.png"), url("../../images/aedo_guid.png");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
@@ -3253,11 +3441,12 @@
 		margin-top: -14em;
 	}
 
+
 /* Footer */
 
 	#footer {
-		background: #f0f0f0;
-		padding: 4em 0 6em 0;
+		background-color: #444444;
+		padding: 2em 0 3em 0;
 		text-align: center;
 	}
 
@@ -3274,7 +3463,7 @@
 			}
 
 		#footer .copyright {
-			color: #999;
+			color: #dddddd;
 			font-size: 0.9em;
 			line-height: 1em;
 			margin: 2em 0 0 0;
@@ -3912,3 +4101,10 @@
 		margin-left: 10px;
 		color: white;
 	  }
+
+	  .xans-mall-faq .contents { padding:20px 0 0; color:#6d6d6d; line-height:20px; }
+
+/********************* Mobile / Tablet *********************/
+@media all and (max-width:1024px) {
+    .xans-mall-faq .contents { padding:20px 16px 0; }
+}
