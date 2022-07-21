@@ -41,12 +41,12 @@ function submit(){
         .then((data)=>{
             if(Math.floor(data.status/100)==2){
                 sessionStorage.setItem('Accesstoken', data.Accesstoken);
-                location.href='landing.html';
+                location.href='index.html';
             }
             else{
                 var form = document.createElement('form');
                 form.setAttribute('method','get');
-                form.setAttribute('action',"./register.html");
+                form.setAttribute('action',"signup.html");
 
                 var hiddenField=document.createElement("input");
                 hiddenField.setAttribute("type","hidden");

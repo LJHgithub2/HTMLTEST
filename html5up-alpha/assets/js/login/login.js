@@ -11,6 +11,7 @@ function checkPhoneNum(phone){
 	}
 	return false;
 }
+
 function validation(){
 	if(checkPhoneNum($("#phone").val())){
 		alert("전화번호를 정확히 입력해주세요");
@@ -18,10 +19,11 @@ function validation(){
 	}
 	submit();
 }
+
 function submit(){
 	var phone_num=escape($("#phone").val());
 	location.href="logincheck.html?phone_num="+phone_num;
 }
-$(document.body).delegate("#submit","click",function(){
+$(document.body).delegate("#login_button","click",function(){
 	validation();
 });

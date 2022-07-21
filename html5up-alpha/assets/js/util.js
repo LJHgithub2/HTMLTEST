@@ -432,7 +432,7 @@
 
 		// Events.
 			$this
-				.on('submit', function() {
+				.on('login_button', function() {
 
 					$this.find('input[type=text],input[type=password],textarea')
 						.each(function(event) {
@@ -469,7 +469,7 @@
 
 							switch (this.type) {
 
-								case 'submit':
+								case 'login_button':
 								case 'reset':
 									break;
 
