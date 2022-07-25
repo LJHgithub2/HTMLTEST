@@ -33,5 +33,5 @@ $(document.body).delegate("#order_button","click",function(){
 	var wreath_price=$(this).parent().parent().prev().prev().children().next().children().next().prev().text();
 	var wreath_name_encode=escape(wreath_name);
 	var wreath_price_encode=escape(wreath_price);
-	location.href="order_info.html?wreath_name="+wreath_name_encode+"&wreath_price="+wreath_price_encode;
+	location.href="ordercheck.html?wreath_name="+wreath_name_encode+"&wreath_price="+wreath_price_encode;
 });

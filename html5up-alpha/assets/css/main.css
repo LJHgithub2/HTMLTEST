@@ -339,6 +339,33 @@
 			width: 50%;
 		}
 
+		.row > .address-6 {
+			width: 20%;
+		}
+
+		
+		.row > .address-7 {
+			width: 70%;
+		}
+
+		.row > .address-8 {
+			width: 30%;
+		}
+
+		.row > .place-1 {
+			width: 70%;
+		}
+
+		main .product_info{
+			margin:4% 0 0 20%;
+			font-size:2em;
+			color:#828282;
+		}
+
+		.row > .place-2 {
+			width: 30%;
+		}
+
 		.row > .off-6 {
 			margin-left: 50%;
 		}
@@ -1853,6 +1880,10 @@
 
 				.row > .col-12-mobilep {
 					width: 100%;
+				}
+
+				.row > .address {
+					width: 130%;
 				}
 
 				.row > .off-12-mobilep {

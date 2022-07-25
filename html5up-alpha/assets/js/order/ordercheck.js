@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 	var address = unescape(location.href);
 	var parameters = (address.slice(address.indexOf('?') + 1, address.length)).split('&');
