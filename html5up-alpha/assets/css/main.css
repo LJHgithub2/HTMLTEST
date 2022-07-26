@@ -356,6 +356,87 @@
 			width: 70%;
 		}
 
+		.row > .upload-1 {
+			width: 50%;
+		}
+
+		.row > .upload-2 {
+			width: 25%;
+		}
+
+		.row > .date-1 {
+			width: 40%;
+		}
+
+		.row > .noti-1 {
+			width: 80%;
+		}
+
+		.row > .name-1 {
+			width: 70%;
+		}
+
+		.row > .name-2 {
+			width: 30%;
+		}
+
+		.residency{
+			width:100%;
+		}
+
+		.residency_item{
+			margin: 10px 0;
+			padding:10px ;
+			width: 100%;
+		}
+		.residency_item .first{
+			padding:10px 0;
+		}
+		.residency_item .first input{
+			width:55%;
+		}
+		.residency_item .first select{
+			float:right;
+			width:37%;
+		}
+
+		.residency_item .third{
+			padding:10px 0;
+		}
+		.residency_item .third input{
+			width:30%;
+		}
+		.residency_item .third select{
+			float:right;
+			width:40%;
+		}
+		select option[value=""][disabled]{
+			display:none;
+		}
+		.residency_item .second input{
+			width:55%;
+		}
+
+		.add_residency{
+			float:right;
+			cursor:pointer;
+			border-radius: px;
+			padding:2px 20px;
+			font-size:0.7em;
+			background-color: #F3B368;
+			color:white;
+		}
+		.file_btn div{
+			border:1px solid rgb(124, 124, 124);
+			background-color: rgb(230, 230, 230);
+			text-align: center;
+			padding:4.4px 0;
+			cursor:pointer;
+			border-radius: 2px;
+			font-size:0.8em;
+			color:rgb(41, 41, 41);
+		
+		}
 		main .product_info{
 			margin:4% 0 0 20%;
 			font-size:2em;
@@ -2110,6 +2191,8 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="time"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2130,6 +2213,8 @@
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="date"]:invalid,
+		input[type="time"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2138,6 +2223,9 @@
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="date"]:focus,
+		input[type="time"]:focus,
+	
 		select:focus,
 		textarea:focus {
 			border-color: #e89980;
@@ -2762,6 +2850,8 @@
 			table.alt tfoot {
 				border-top: 0;
 			}
+
+			
 
 /* Button */
 
@@ -4083,6 +4173,12 @@
 					width: calc(100% + 2em);
 				}
 
+				.box .image.upload {
+					border-radius: 0;
+					margin-left: -1em;
+					width: calc(100% + 2em);
+				}
+
 					.box .image.featured img {
 						border-radius: 0 !important;
 					}
@@ -4138,4 +4234,13 @@
 /********************* Mobile / Tablet *********************/
 @media all and (max-width:1024px) {
     .xans-mall-faq .contents { padding:20px 16px 0; }
+}
+
+.deceased_img{
+    background-image:url("/html5up-alpha/images/deceased_img.png");
+    background-position: center;
+    height:50%;
+    width:50%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
