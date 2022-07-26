@@ -100,4 +100,15 @@ function code_receive(){
             auth_check=true;
         }
     },1000);
-}
+}$(document).ready(function(){
+	$("#auth_number").keydown(function(key){
+		if(key.keyCode==13){
+			submit();
+		}
+	});
+	$("#terms").keydown(function(key){
+		if(key.keyCode==13){
+			submit();
+		}
+	});
+});

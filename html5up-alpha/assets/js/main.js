@@ -6,6 +6,9 @@
 
 (function($) {
 
+
+	//종현
+
 	var	$window = $(window),
 		$body = $('body'),
 		$header = $('#header'),
@@ -82,3 +85,44 @@
 		}
 
 })(jQuery);
+//종현
+var login_check=false;
+window.onload = function () {
+	fetch("https://www.aedo.co.kr/v1/user",{
+		method:"get", 
+		headers: {
+			"Content-Type": "application/json",
+			'Accesstoken':sessionStorage.getItem('Accesstoken'),
+		},
+	})
+	.then((res)=>res.json())
+	.then((data) =>{
+		if(Math.floor(data.status/100)==2){
+			$("#login_btn").hide();
+			$("#user_info").text(data.user.phone+"님 환영합니다!");
+			login_check=true;
+		}
+		else{
+			$("#logout_btn").hide();
+		}
+	});
+}
+$("#logout").click(function(){
+    sessionStorage.setItem('Accesstoken', null);
+	location.href="index.html";
+});
+function nav_click(href){
+	if(login_check)	location.href=href;
+	else alert("로그인후 이용해주세요");
+}
+
+window.onpageshow = function (event) {
+
+    // 새로고침: window.performance.navigation.type == 1
+    // 뒤로가기: window.performance.navigation.type == 2
+    if (event.persisted || (window.performance && (window.performance.navigation.type == 1 || window.performance.navigation.type == 2))) {
+    
+		location.href = document.referrer;
+    }
+    
+}

@@ -27,3 +27,10 @@ function submit(){
 $(document.body).delegate("#login_button","click",function(){
 	validation();
 });
+$(document).ready(function(){
+	$("#phone").keydown(function(key){
+		if(key.keyCode==13){
+			validation();
+		}
+	});
+});
